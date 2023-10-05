@@ -37,7 +37,7 @@ nav {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 20px 8%;
+  padding: 37px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -94,6 +94,13 @@ nav ul li a:hover {
   animation: waviy 5s infinite;
   animation-delay: 5s;
   text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.header-content a:hover {
+  background-color: #fff;
+  color: black;
 }
 
 @keyframes waviy {
@@ -105,6 +112,29 @@ nav ul li a:hover {
   20% {
     transform: translateY(50px);
   }
+}
+
+.social {
+  position: fixed;
+  left: 37px;
+  bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  animation: fade 3s ease-in-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.social a {
+  margin-bottom: 15px;
+  color: #fff;
+  opacity: 0.5;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.social a:hover {
+  opacity: 1;
 }
 
 .header-video {
@@ -192,5 +222,15 @@ nav ul li a:hover {
   nav ul li a {
     padding-left: 0;
     font-size: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .social {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+  .social a {
+    margin-right: 15px;
   }
 }
