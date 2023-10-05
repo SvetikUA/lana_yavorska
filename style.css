@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Gabarito', cursive;
+  font-family: "Gabarito", cursive;
   scroll-behavior: smooth;
 }
 
@@ -34,7 +34,7 @@ body {
 
 nav {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   padding: 37px;
@@ -143,6 +143,16 @@ nav ul li a:hover {
   bottom: 0;
   z-index: -1;
   object-fit: cover;
+}
+
+.projects {
+  height: 100vh;
+  background-image: linear-gradient(
+  335deg,
+  hsl(0deg 0% 0%) 0%,
+  hsl(60deg 3% 11%) 55%,
+  hsl(60deg 2% 20%) 100%
+);
 }
 
 @media (min-aspect-ratio: 16/9) {
