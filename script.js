@@ -16,3 +16,26 @@ function toggleMenu() {
     });
   });
 }
+
+// Slider
+$('.slider').slick({
+  centerMode: true,
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  centerPadding: '0',
+  arrows: false,
+  responsive: [
+    
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        slidesToShow: 1,
+        infinite: false,
+        centerPadding: '60px',
+      }
+    }
+  ]
+});
