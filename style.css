@@ -129,18 +129,11 @@ nav ul li a:hover {
 
 @media (max-width: 786px) {
   .menu-toggle {
-    width: 32px;
-    height: 24px;
-    margin-right: 5px;
+    right: 37px;
     display: block;
     top: 20px;
     position: relative;
     border: none;
-  }
-
-  .menu-toggle:focus {
-    background: rgba(0, 0, 0, 0);
-    outline: none;
   }
 
   .menu-toggle span {
