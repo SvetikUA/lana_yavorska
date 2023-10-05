@@ -116,8 +116,8 @@ nav ul li a:hover {
 
 .social {
   position: fixed;
-  left: 37px;
-  bottom: 50px;
+  left: 20px;
+  bottom: 10px;
   display: flex;
   flex-direction: column;
   animation: fade 3s ease-in-out forwards;
