@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  font-family: 'Gabarito', cursive;
   scroll-behavior: smooth;
 }
 
@@ -78,7 +78,8 @@ nav ul li a:hover {
 .header-content h1 {
   font-size: calc(var(--index) * 3.5);
   color: #fff;
-  font-weight: 600;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .header-content a {
@@ -92,6 +93,7 @@ nav ul li a:hover {
   margin-top: 20px;
   animation: waviy 5s infinite;
   animation-delay: 5s;
+  text-transform: uppercase;
 }
 
 @keyframes waviy {
