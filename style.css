@@ -148,11 +148,12 @@ nav ul li a:hover {
 .projects {
   height: 100vh;
   background-image: linear-gradient(
-  335deg,
-  hsl(0deg 0% 0%) 0%,
-  hsl(60deg 3% 11%) 55%,
-  hsl(60deg 2% 20%) 100%
-);
+    325deg,
+    hsl(0deg 0% 0%) 0%,
+    hsl(52deg 8% 14%) 33%,
+    hsl(52deg 5% 28%) 67%,
+    hsl(51deg 3% 43%) 100%
+  );
 }
 
 @media (min-aspect-ratio: 16/9) {
