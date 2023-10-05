@@ -66,6 +66,7 @@ nav ul li a:hover {
 .menu-toggle {
   cursor: pointer;
   display: none;
+  background: rgba(0, 0, 0, 0)
 }
 
 .header-content {
@@ -101,7 +102,7 @@ nav ul li a:hover {
     transform: translateY(0);
   }
   20% {
-    transform: translateY(50px) scale(1.3);
+    transform: translateY(50px);
   }
 }
 
