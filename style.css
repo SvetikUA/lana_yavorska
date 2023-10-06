@@ -147,6 +147,15 @@ nav ul li a:hover {
   object-fit: cover;
 }
 
+.header-mobile {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  object-fit: cover;
+  display: none;
+}
+
 .projects {
   position: relative;
   height: 100vh;
@@ -164,15 +173,37 @@ nav ul li a:hover {
 }
 
 .slider {
-  width: 70%;
+  width: 100%;
+  padding: 0 15%;
 }
 
-.slick-slide video {
+.project {
+  background-color: #fff;
+  height: 320px;
+  width: 100%;
+  margin-right: 20px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.project-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+}
+
+.slick-initialized .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+/* .slick-slide video {
   max-width: 100%;
   height: 420px;
   transition: all 0.4s ease-in-out;
   border-radius: 2px;
-}
+} */
 
 .slick-slide {
   transform: scale(0.8);
@@ -189,8 +220,7 @@ nav ul li a:hover {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 3px;
-  margin-top: -50px;
-  margin-left: -50px;
+  text-align: center;
   z-index: 88;
   font-size: calc(var(--index) * 4.5);
 }
@@ -199,14 +229,16 @@ nav ul li a:hover {
 
 
 @media (min-aspect-ratio: 16/9) {
-  .header-video {
+  .header-video,
+  .header-mobile {
     width: 100%;
     height: auto;
   }
 }
 
 @media (max-aspect-ratio: 16/9) {
-  .header-video {
+  .header-video,
+  .header-mobile {
     width: auto;
     height: 100%;
   }
@@ -278,6 +310,15 @@ nav ul li a:hover {
   }
 }
 
+@media (max-width: 735px) {
+  .header-video {
+    display: none;
+  }
+  .header-mobile {
+    display: block;
+  }
+}
+
 @media (max-width: 575px) {
   .social {
     flex-direction: row;
@@ -294,5 +335,6 @@ nav ul li a:hover {
 @media (max-height: 460px) {
   .projects {
     height: 100%;
+    padding: 25px;
   }
 }

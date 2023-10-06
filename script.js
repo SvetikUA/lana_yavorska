@@ -34,7 +34,7 @@ $('.slider').slick({
         centerMode: true,
         slidesToShow: 1,
         infinite: false,
-        centerPadding: '60px',
+        centerPadding: '30px',
       }
     }
   ]
